@@ -1,0 +1,414 @@
+@charset "UTF-8";
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Noto Serif JP', serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: #FFFEF2;
+}
+
+/*ヘッダー*/
+header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    padding: 1%;
+    box-sizing: border-box;
+    background-color: rgba(0,0,0,0.5);
+    color: #FFFEF2;
+    z-index: 10;
+}
+
+header h1 {
+    font-size: 1.7em;
+    box-sizing: border-box;
+}
+
+header h1 a img {
+    width: 35px;
+    height: 35px;
+    padding-top: 
+}
+
+header nav {
+    width: 600px;
+    margin-left: auto;
+}
+
+header nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+header nav ul li {
+    width: 150px;
+    line-height: 2;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+header nav ul li a {
+    transition: 0.5s;
+    text-shadow: 0 0.1px 0 #000;
+}
+
+.pagenav {
+    color: #e82015;
+    border-bottom: 2px solid #e82015;
+}
+
+header nav ul li a:hover {
+    color: #E82015;
+    border-bottom: 1px solid #E82015;
+}
+
+
+header a{
+    color: #FFFEF2;
+}
+
+header a:hover {
+    opacity: 0.8;
+}
+
+header .reserveted {
+    writing-mode: vertical-rl;
+    width: 10%;
+    height: 150px;
+    position: fixed;
+    bottom: 10%;
+    right: 0;
+    border-radius: 2px;
+}
+
+header .reserveted p a {
+    display: block;
+    width: 3%;
+    height: 120px;
+    background-color: #E83015;
+    text-align: center;
+    padding: 10% 3% 10% 0;
+    transition: 1s;
+}
+
+header .reserveted p a:hover {
+    padding-right: 10%;
+    background-color: #E83015;
+    opacity: 1.0;
+}
+
+
+/*--------！！メイン部分開始！！----------*/
+/*ページタイトル*/
+.page-title {
+    width: 30%;
+    height: 250px;
+    background-color: #000;
+    padding: 1%;
+    position: absolute;
+    top: 20%;
+    box-shadow: 1px 1px 0 0 #43341B;
+    box-sizing: border-box;
+}
+
+.page-title h2 {
+    font-size: 2em;
+    color: #FFFEF2;
+    padding-left: 85%;
+    letter-spacing: 0.6em;
+    writing-mode: tb-rl;
+    border-right: 2px solid #E83015;
+}
+
+
+
+/*メイン-トップ画像*/
+.top-huro {
+    width: 100vw;
+    height: 80vh;
+}
+
+.top-huro img {
+    width: 100%
+}
+
+.top-huro .airbox {
+    width: 100%;
+    height: 20vh;
+}
+
+.top-huro .textbox {
+    height: 70%;
+    box-sizing: border-box;
+    writing-mode: tb-rl;
+}
+
+.top-huro .textbox p {
+    padding-top: 5%;
+    letter-spacing: 0.1em;
+}
+
+.top-huro .textbox p:first-child {
+    color: #FFFEF2;
+    font-size: 2em;
+    position: absolute;
+    top: 10%;
+    right: 15%;
+}
+
+.top-huro .textbox p:last-child {
+    color: #FFFEF2;
+    font-size: 2em;
+    position: absolute;
+    top: 10%;
+    right: 20%;
+    display: block;
+}
+
+/*メイン-美人の湯*/
+.bizin-no-yu {
+    width: 100vw;
+    height: 100vh;
+    color: #fffef2;
+    background-color: #000;
+    display: flex;
+    box-sizing: border-box;
+    padding: 2%;
+}
+
+.bizin-no-yu img {
+    width: 40%;
+    padding: 10% 1% 1% 5%;
+    box-sizing: border-box;
+}
+
+.bizin-no-yu .textbox {
+    width: 40%;
+    padding-top: 15%;
+    padding-left: 5%;
+    box-sizing: border-box;
+}
+
+.bizin-no-yu .textbox tr {
+    border-bottom: 2px solid #fffef2;
+}
+
+.bizin-no-yu .textbox th {
+    padding: 3em;
+}
+
+.bizin-no-yu .titlebox {
+    width: 10%;
+    padding-top: 8%;
+    font-size: 1.8em;
+    letter-spacing: 0.4em;
+    box-sizing: border-box;
+    writing-mode: tb-rl;
+}
+
+.bizin-no-yu .titlebox p {
+    padding: 3em 4% 4% 4%;
+}
+
+
+/*メイン-蔵の湯*/
+.kura-no-yu {
+    width: 100vw;
+    display: flex;
+    color: #fffef2;
+    background-color: #000;
+    box-sizing: border-box;
+    padding: 2%;
+}
+
+.kura-no-yu .titlebox {
+    width: 20%;
+    font-size: 1.8em;
+    letter-spacing: 0.4em;
+    box-sizing: border-box;
+    writing-mode: tb-rl;
+}
+
+.titlebox p {
+    padding: 3em 4% 4% 4%;
+}
+
+.kura-no-yu .textbox {
+    width: 40%;
+    padding-top: 5%;
+    padding-left: 5%;
+    box-sizing: border-box;
+}
+
+.kura-no-yu .textbox th {
+    padding: 3em;
+}
+
+.kura-no-yu img {
+    width: 40%;
+    padding: 3%;
+    box-sizing: border-box
+}
+
+
+/*メイン-松の湯*/
+.matsu-no-yu {
+    width: 100vw;
+    color: #fffef2;
+    background-color: #000;
+    display: flex;
+    box-sizing: border-box;
+    padding: 2%;
+}
+
+.matsu-no-yu img {
+    width: 40%;
+    padding: 3%;
+    box-sizing: border-box;
+}
+
+.matsu-no-yu .textbox {
+    width: 40%;
+    padding-top: 5%;
+}
+
+.matsu-no-yu .textbox th {
+    padding: 3em;
+}
+
+.matsu-no-yu .titlebox {
+    width: 10%;
+    font-size: 1.8em;
+    letter-spacing: 0.4em;
+    box-sizing: border-box;
+    writing-mode: tb-rl;
+}
+
+/*メイン-アフターファン*/
+.after-fun {
+    width: 100vw;
+    display: flex;
+    color: #000;
+    background-color: #fffef2;
+    box-sizing: border-box;
+
+}
+
+.after-fun img {
+    width: 70%;
+    box-sizing: border-box;
+    margin: 5%;
+}
+
+.after-fun .textbox {
+    width: 30%;
+    height: 77vh;
+    margin: auto 5% auto auto;
+    box-sizing: border-box;
+    color: #fffef2;
+    background-color: #000;
+}
+
+.after-fun .textbox h3 {
+    text-align: center;
+    font-size: 1.8em;
+    line-height: 3em;
+}
+
+.after-fun .textbox p {
+    font-size: 1em;
+    text-align: right;
+    margin-top: 20%;
+    margin-right: 1em;
+}
+
+.after-fun .textbox ul li {
+    font-size: 1.2em;
+    line-height: 3em;
+    list-style-type: disc;
+    margin-top: 10%;
+    margin-left: 2em;
+}
+
+
+
+/*フッターセクション*/
+footer {
+    width: 100vw;
+    padding: 5% 5% 1% 5%;
+    background-color: #000;
+    color: #FFFEF2;
+    box-sizing: border-box;
+}
+
+.footer-wrap {
+    display: flex;
+}
+
+.footer-top {
+    width: 50%;
+    display: flex;
+}
+
+.footer-top .imgbox {
+    width: 30%;
+    height: 25vh;
+}
+
+.footer-top img {
+    width: 50%;
+    height: 50%;
+    padding-top: 10%;
+    padding-left: 40%;
+}
+
+.footer-top .text-box {
+    width: 50%;
+    line-height: 2;
+}
+
+.footer-top .text-box p {
+    font-size: 1em;
+}
+
+.footer-top .text-box h4 {
+    font-size: 1.5em;
+    font-weight: normal;
+}
+
+footer nav {
+    width: 25%;
+}
+
+footer nav ul {
+    list-style-type: none;
+    line-height: 3;
+}
+
+footer nav ul li a {
+    color: #FFFEF2;
+}
+
+footer nav ul li a:hover {
+    opacity: 0.8;
+}
+
+footer .snsicons {
+    display: flex;
+}
+
+footer .snsicons p {
+    padding: 20%;
+}
+
+footer p small {
+    display: block;
+    text-align: center;
+}

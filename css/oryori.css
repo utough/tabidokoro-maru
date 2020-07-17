@@ -1,0 +1,433 @@
+@charset "UTF-8";
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Noto Serif JP', serif;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: #fffef2;
+}
+
+/*ヘッダー*/
+header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    padding: 1%;
+    box-sizing: border-box;
+    background-color: rgba(0,0,0,0.5);
+    color: #FFFEF2;
+    z-index: 10;
+}
+
+header h1 {
+    font-size: 1.7em
+}
+
+header h1 img {
+    width: 35px;
+    height: 35px;
+}
+
+header nav {
+    width: 600px;
+    margin-left: auto;
+}
+
+header nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+header nav ul li {
+    width: 150px;
+    line-height: 2;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+header nav ul li a {
+    transition: 0.5s;
+    text-shadow: 0 0.1px 0 #000;
+}
+
+.pagenav {
+    color: #e82015;
+    border-bottom: 2px solid #e82015;
+}
+
+header nav ul li a:hover {
+    color: #E82015;
+    border-bottom: 1px solid #E82015;
+}
+
+
+header a{
+    color: #FFFEF2;
+}
+
+header a:hover {
+    opacity: 0.8;
+}
+
+header .reserveted {
+    writing-mode: vertical-rl;
+    width: 10%;
+    height: 150px;
+    position: fixed;
+    bottom: 10%;
+    right: 0;
+    border-radius: 2px;
+}
+
+header .reserveted p a {
+    display: block;
+    width: 3%;
+    height: 120px;
+    background-color: #E83015;
+    text-align: center;
+    padding: 10% 3% 10% 0;
+    transition: 1s;
+}
+
+header .reserveted p a:hover {
+    padding-right: 10%;
+    background-color: #E83015;
+    opacity: 1.0;
+}
+
+
+/*メイン-ページタイトル*/
+.pagetitle {
+    width: 30%;
+    height: 250px;
+    background-color: #000;
+    writing-mode: tb-rl;
+    box-sizing: border-box;
+    position: absolute;
+    top: 20%;
+}
+
+.pagetitle h2 {
+    color: #fffef2;
+    font-size: 2em;
+    letter-spacing: 0.9em;
+    padding-top: 0.5em;
+    margin: 10%;
+    border-right: 2px solid #E83015;
+}
+
+
+/*メイン-ページトップ*/
+.pagetop {
+    width: 100vw;
+}
+
+.pagetop img {
+    width: 100%;
+}
+
+.pagetop .titlebox {
+    writing-mode: tb-rl;
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    padding-top: 10%;
+}
+
+.pagetop .titlebox h3 {
+    color: #fffef2;
+    font-size: 2em;
+    letter-spacing: 0.2em;
+}
+
+
+/*メイン-蟹御膳*/
+.kani-gozen {
+    width: 100vw;
+    height: 80vh;
+}
+
+.kani-gozen .ttbox {
+    width: 90%;
+    height: 90%;
+    display: flex;
+    margin-top: 10%;
+    margin-left: auto;
+}
+
+.kani-gozen .imgbox {
+    width: 50%;
+    height: 90%;
+    background-color: #000;
+    box-sizing: border-box;
+    padding: 2%;
+}
+
+.kani-gozen .imgbox img {
+    width: 100%;
+    height: 100%;
+}
+
+.kani-gozen .textbox {
+    width: 50%;
+    height: 90%;
+    box-sizing: border-box;
+    padding: 5%;
+    background-color: #000;
+}
+
+.kani-gozen .textbox h3 {
+    color: #fffef2;
+    padding: 2%;
+    font-size: 1.5em;
+}
+
+.kani-gozen .textbox p {
+    color: #fffef2;
+    padding: 2%;
+    font-size: 1.2em;
+}
+
+
+
+
+
+
+/*メイン-土鍋御膳*/
+.donabe-gozen {
+    width: 100vw;
+    height: 80vh;
+}
+
+.donabe-gozen .ttbox {
+    display: flex;
+    width: 90%;
+    height: 90%;
+}
+
+.donabe-gozen .ttbox .textbox {
+    background-color: #000;
+    width: 50%;
+    height: 90%;
+    padding: 5%;
+    box-sizing: border-box;
+}
+
+.donabe-gozen .ttbox .textbox h3 {
+    color: #fffef2;
+    padding: 2%;
+    font-size: 1.5em;
+}
+
+.donabe-gozen .ttbox .textbox p {
+    color: #fffef2;
+    padding: 2%;
+    font-size: 1.2em;
+}
+
+.donabe-gozen .imgbox {
+    width: 50%;
+    height: 90%;
+    padding: 2%;
+    background-color: #000;
+    box-sizing: border-box;
+}
+
+.donabe-gozen .imgbox img {
+    width: 100%;
+    height: 100%;
+}
+
+/*メイン-朝食*/
+.breakfast {
+    width: 100vw;
+    height: 80vh;
+}
+
+.breakfast .ttbox {
+    width: 90%;
+    height: 90%;
+    display: flex;
+    margin-left: auto;
+}
+
+.breakfast .imgbox {
+    width: 50%;
+    height: 90%;
+    background-color: #000;
+    box-sizing: border-box;
+    padding: 2%;
+}
+
+.breakfast .imgbox img {
+    width: 100%;
+    height: 100%;
+}
+
+.breakfast .textbox {
+    width: 50%;
+    height: 90%;
+    background-color: #000;
+    box-sizing: border-box;
+    padding: 5%;
+    
+}
+
+.breakfast .textbox h3 {
+    color: #fffef2;
+    font-size: 1.5em;
+    padding: 2%;
+}
+
+.breakfast .textbox p {
+    color: #fffef2;
+    font-size: 1.2em;
+    padding: 2%;
+}
+
+/*メイン-御料理処ご案内*/
+.oryori-dokoro {
+    width: 100vw;
+    height: 80vh;
+    position: relative;
+}
+
+.oryori-dokoro img {
+    width: 100%;
+}
+
+.oryori-dokoro .titlebox {
+    width: 30%;
+    height: 60%;
+    background-color: #000;
+    position: absolute;
+    top: 50%;
+    right: 2%;
+    writing-mode: tb-rl;
+    box-sizing: border-box;
+    line-height: 4;
+}
+
+.titlewrap {
+    margin-top: 15%;
+}
+
+.oryori-dokoro .titlebox h3 {
+    color: #fffef2;
+    font-size: 2em;
+}
+
+.oryori-dokoro .titlebox p {
+    color: #fffef2;
+    text-indent: 13em;
+}
+
+.oryori-dokoro .titlebox h3 img {
+    width: 50%;
+    height: 50%;
+    display: block;
+    margin-top: 12%;
+}
+
+.oryori-dokoro .ttbox {
+    width: 100%;
+    display: flex;
+}
+
+.oryori-dokoro .ttbox .textbox {
+    width: 50%;
+    padding: 2%;
+}
+
+.oryori-dokoro .ttbox .textbox ul {
+    line-height: 2;
+}
+
+.oryori-dokoro .ttbox .textbox ul li {
+    list-style: none;
+}
+
+
+
+/*フッターセクション*/
+footer {
+    width: 100vw;
+    margin-top: 10%;
+    padding: 5% 5% 1% 5%;
+    background-color: #000;
+    color: #FFFEF2;
+    box-sizing: border-box;
+}
+
+.footer-wrap {
+    display: flex;
+}
+
+.footer-top {
+    width: 50%;
+    display: flex;
+}
+
+.footer-top .imgbox {
+    width: 30%;
+    height: 25vh;
+}
+
+.footer-top img {
+    width: 50%;
+    height: 50%;
+    padding-top: 10%;
+    padding-left: 40%;
+}
+
+.footer-top .text-box {
+    width: 50%;
+    line-height: 2;
+}
+
+.footer-top .text-box p {
+    font-size: 1em;
+}
+
+.footer-top .text-box h4 {
+    font-size: 1.5em;
+    font-weight: normal;
+}
+
+footer nav {
+    width: 25%;
+}
+
+footer nav ul {
+    list-style-type: none;
+    line-height: 3;
+}
+
+footer nav ul li a {
+    color: #FFFEF2;
+}
+
+footer nav ul li a:hover {
+    opacity: 0.8;
+}
+
+footer .snsicons {
+    display: flex;
+}
+
+footer .snsicons p {
+    padding: 20%;
+}
+
+footer p small {
+    display: block;
+    text-align: center;
+}

@@ -1,0 +1,558 @@
+@charset "UTF-8";
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Noto Serif JP', serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: #fffef2;
+}
+
+/*ヘッダー*/
+header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    padding: 1%;
+    box-sizing: border-box;
+    background-color: rgba(0,0,0,0.5);
+    color: #FFFEF2;
+    z-index: 10;
+}
+
+header h1 {
+    font-size: 1.7em;
+    box-sizing: border-box;
+}
+
+header h1 a img {
+    width: 35px;
+    height: 35px;
+    padding-top: 
+}
+
+header nav {
+    width: 600px;
+    margin-left: auto;
+}
+
+header nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+header nav ul li {
+    width: 150px;
+    line-height: 2;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+header nav ul li a {
+    transition: 0.5s;
+    text-shadow: 0 0.1px 0 #000;
+}
+
+.pagenav {
+    color: #e82015;
+    border-bottom: 2px solid #e82015;
+}
+
+header nav ul li a:hover {
+    color: #E82015;
+    border-bottom: 1px solid #E82015;
+}
+
+
+header a{
+    color: #FFFEF2;
+}
+
+header a:hover {
+    opacity: 0.8;
+}
+
+header .reserveted {
+    writing-mode: vertical-rl;
+    width: 10%;
+    height: 150px;
+    position: fixed;
+    bottom: 10%;
+    right: 0;
+    border-radius: 2px;
+}
+
+header .reserveted p a {
+    display: block;
+    width: 3%;
+    height: 120px;
+    background-color: #E83015;
+    text-align: center;
+    padding: 10% 3% 10% 0;
+    transition: 1s;
+}
+
+header .reserveted p a:hover {
+    padding-right: 10%;
+    background-color: #E83015;
+    opacity: 1.0;
+}
+
+/*!!----ここから客室メインスタート---!!*/
+/*メイン-「客室」ページタイトル*/
+.page-title {
+    width: 30%;
+    height: 250px;
+    background-color: #000;
+    padding: 1%;
+    position: absolute;
+    top: 20%;
+    right: 0;
+    box-shadow: 1px 1px 0 0 #43341B;
+    box-sizing: border-box;
+}
+
+.page-title h2 {
+    font-size: 2em;
+    color: #fffef2;
+    padding-top: 12%;
+    padding-left: 5%;
+    letter-spacing: 1.5em;
+    writing-mode: tb-rl;
+    border-left: 2px solid #E83015;
+}
+
+
+/*メイン-客室トップ*/
+.oheya-top {
+    width: 100vw;
+    
+}
+
+.oheya-top img {
+    width: 100%;
+}
+
+.oheya-top .textbox {
+    writing-mode: tb-rl;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    padding-top: 2%;
+}
+
+.oheya-top .textbox h3 {
+    color: #fffef2;
+    font-size: 2em;
+    text-shadow: 1px 0 0 #000;
+    letter-spacing: 0.3em;
+}
+
+.oheya-top .textbox h3:last-child {
+    padding-top: 2em;
+}
+
+/*メイン-客室 種類一覧*/
+.oheya-kind {
+    width: 100vw;
+    margin-top: 10%;
+}
+
+.oheya-kind h3 {
+    font-size: 1.5em;
+    letter-spacing: 0.2em;
+    text-align: left;
+    color: #fffef2;
+}
+
+.kind-bg-color {
+    background-color: #000;
+    width: 90%;
+    padding: 2%;
+}
+
+.kind-container {
+    width: 80vw;
+    display: flex;
+    margin: 0 0 0 auto;
+}
+
+.kind-container div {
+    width: 30%;
+    height: 49vh;
+    margin: 0 auto;
+    background-color: #000;
+}
+
+.kind-container .kind-a {
+    background-image: url(../imgs/oheya/roomkind-a.jpg);
+    background-size: cover;
+        
+}
+
+.kind-container .kind-a a {
+    height: 49vh;
+    color: transparent;
+    padding: auto;
+    display: block;
+    text-align: center;
+    line-height: 15;
+}
+
+.kind-container .kind-a h3 a:hover {
+    color: #fff;
+    text-shadow: 1px 1px 0 #000;
+    background-color: rgba(169,169,169,0.4);
+    background-blend-mode: lighten;
+    transition: 0.5s;
+    display: block;
+    box-sizing: border-box;
+}
+
+.kind-container .kind-b {
+    background-image: url(../imgs/oheya/roomkind-b.jpg);
+    background-size: cover;
+}
+
+.kind-container .kind-b a {
+    height: 49vh;
+    color: transparent;
+    padding: auto;
+    display: block;
+    text-align: center;
+    line-height: 15;
+}
+
+.kind-container .kind-b a:hover {
+    color: #fff;
+    text-shadow: 1px 1px 0 #000;
+    background-color: rgba(169,169,169,0.4);
+    background-blend-mode: lighten;
+    transition: 0.5s;
+    display: block;
+}
+
+.kind-container .kind-c {
+    background-image: url(../imgs/oheya/roomkind-c.jpg);
+    background-size: cover;
+}
+
+.kind-container .kind-c a {
+    height: 49vh;
+    color: transparent;
+    padding: auto;
+    display: block;
+    text-align: center;
+    line-height: 15;
+}
+
+.kind-container .kind-c a:hover {
+    color: #fff;
+    text-shadow: 1px 1px 0 #000;
+    background-color: rgba(169,169,169,0.4);
+    background-blend-mode: lighten;
+    transition: 0.5s;
+    display: block;
+}
+
+.kind-container div a img {
+    width: 100%;
+    padding: 2%;
+    margin: auto;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+.kind-container div a:hover {
+    opacity: 0.8;
+}
+
+/*メイン-客室 ツイン*/
+.oheya-twin {
+    width: 100vw;
+    margin-top: 10%;
+}
+
+.oheya-twin img {
+    width: 100%;
+}
+
+.oheya-twin .tt-box {
+    width: 100vw;
+    display: flex;
+    position: relative;
+    box-sizing: border-box;
+    padding: 1%;
+}
+
+.oheya-twin .tt-box img {
+    width: 30%;
+    box-sizing: border-box;
+    padding: 2%;
+}
+
+.oheya-twin .tt-box .textbox {
+    width: 40%;
+    box-sizing: border-box;
+    padding: 2%;
+}
+
+.oheya-twin .textbox h4 {
+    font-size: 1.2em;
+}
+
+.oheya-twin .textbox table {
+    margin-top: 5%;
+}
+
+.oheya-twin .textbox table tr{
+    font-size: 1em;
+    margin-top: 2%;
+}
+
+.oheya-twin .textbox table tr th {
+    margin-right: 10%;
+}
+
+.oheya-twin .tt-box .titlebox {
+    background-color: #000;
+    color: #fffef2;
+    writing-mode: tb-rl;
+    width: 15%;
+    height: 700px;
+    box-sizing: border-box;
+    position: absolute;
+    top: -120%;
+    right: 10%;
+    box-sizing: border-box;
+}
+
+.oheya-twin .tt-box .titlebox h3 {
+    font-size: 2em;
+    letter-spacing: 0.3em;
+    padding: 4%;
+}
+
+/*メイン-客室　グループ*/
+.oheya-group {
+    width: 100vw;
+}
+
+.oheya-group img {
+    width: 100%;
+}
+
+.oheya-group .tt-box {
+    width: 100vw;
+    display: flex;
+    position: relative;
+    box-sizing: border-box;
+    padding: 1%;
+}
+
+.oheya-group .tt-box .titlebox {
+    width: 30%;
+}
+
+.oheya-group .tt-box .titlebox .inner-titlebox {
+    width: 15%;
+    height: 700px;
+    writing-mode: tb-rl;
+    background-color: #000;
+    color: #fffef2;
+    position: absolute;
+    top: -120%;
+    left: 5%;
+    box-sizing: border-box;
+}
+
+.oheya-group .tt-box .titlebox .inner-titlebox h3 {
+    font-size: 2em;
+    letter-spacing: 0.3em;
+    padding: 4%;
+}
+
+.oheya-group .tt-box .textbox {
+    width: 40%;
+    box-sizing: border-box;
+    padding: 2%;
+}
+
+.oheya-group .tt-box .textbox h4 {
+    font-size: 1.2em;
+}
+
+.oheya-group .tt-box .textbox table {
+    margin-top: 5%;
+}
+
+.oheya-group .tt-box img {
+    width: 30%;
+    box-sizing: border-box;
+    padding: 2%;
+}
+
+/*メイン-客室露天風呂*/
+.oheya-roombath {
+    width: 100vw;
+}
+
+.oheya-roombath img {
+    width: 100%;
+}
+
+.oheya-roombath .tt-box {
+    display: flex;
+    width: 100vw;
+    position: relative;
+    box-sizing: border-box;
+    padding: 1%;
+}
+
+.oheya-roombath .tt-box img {
+    width: 30%;
+    box-sizing: border-box;
+    padding: 2%;
+}
+
+.oheya-roombath .tt-box .textbox {
+    width: 40%;
+    box-sizing: border-box;
+    padding: 2%;
+}
+
+.oheya-roombath .tt-box .textbox h4 {
+    font-size: 1.2em;
+}
+
+.oheya-roombath .tt-box .textbox table {
+    margin-top: 5%;
+}
+
+.oheya-roombath .tt-box .titlebox {
+    writing-mode: tb-rl;
+    color: #fffef2;
+    background-color: #000;
+    width: 15%;
+    height: 700px;
+    position: absolute;
+    top: -120%;
+    right: 10%;
+    box-sizing: border-box;
+}
+
+.oheya-roombath .tt-box .titlebox h3 {
+    font-size: 2em;
+    letter-spacing: 0.3em;
+    padding: 4%;
+}
+
+
+/*ご予約ボタン*/
+.reserv-btn {
+    width: 20vw;
+    line-height: 4;
+    margin: 5% auto 3% auto;
+    box-shadow: 0 2px 0 0 #000;
+    text-align: center;
+    background-color: #E83015;
+    border-radius: 3px;
+}
+
+.reserv-btn:hover {
+    position: relative;
+    top: 2px;
+    box-shadow: none;
+}
+
+.reserv-btn a {
+    text-decoration: none;
+    color: #fffef2;
+}
+
+
+
+
+
+/*フッターセクション*/
+footer {
+    width: 100vw;
+    padding: 5% 5% 1% 5%;
+    background-color: #000;
+    color: #FFFEF2;
+    box-sizing: border-box;
+}
+
+.footer-wrap {
+    display: flex;
+}
+
+.footer-top {
+    width: 50%;
+    display: flex;
+}
+
+.footer-top .imgbox {
+    width: 30%;
+    height: 25vh;
+}
+
+.footer-top img {
+    width: 50%;
+    height: 50%;
+    padding-top: 10%;
+    padding-left: 40%;
+}
+
+.footer-top .text-box {
+    width: 50%;
+    line-height: 2;
+}
+
+.footer-top .text-box p {
+    font-size: 1em;
+}
+
+.footer-top .text-box h4 {
+    font-size: 1.5em;
+    font-weight: normal;
+}
+
+footer nav {
+    width: 25%;
+}
+
+footer nav ul {
+    list-style-type: none;
+    line-height: 3;
+}
+
+footer nav ul li a {
+    color: #FFFEF2;
+}
+
+footer nav ul li a:hover {
+    opacity: 0.8;
+}
+
+footer .snsicons {
+    display: flex;
+}
+
+footer .snsicons p {
+    padding: 20%;
+}
+
+footer p small {
+    display: block;
+    text-align: center;
+}
+
+
+

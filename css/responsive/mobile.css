@@ -1,0 +1,199 @@
+@media screen and (max-width:500px) {
+    header h1{
+        display: none;
+    }
+    
+    header .logo {
+        display: block;
+        width: 15%;
+        height: 60px;
+    }
+    
+    header .logo img {
+        height: 50px;
+        margin: 0 auto;
+    }
+    
+    header nav {
+        display: none;
+    }
+    
+    header nav ul li{
+        width: 25%;
+    }
+    
+    .bg-transtext {
+        margin-top: 30%;
+        margin-bottom: -20%;
+    }
+    
+    .bg-transtext p {
+        font-size: 0.8em;
+    }
+    
+    .bg-transtext p:first-child {
+        position: absolute;
+        right: 40%;
+    }
+    
+/*メイン onsen*/
+    .marus-onsen img {
+        width: 100%;
+    }
+    
+    .marus-onsen .text-box {
+        width: 100%;
+        margin-top: 10%;
+    }
+    
+/*ウェルカムメッセージ*/
+    .welcome-to-maru{
+        font-size: 1em;
+    }
+    
+    .welcome-to-maru p:last-child {
+        font-weight: bold;
+    }
+    
+/*メイン huro*/
+    .marus-onsen .text-box {
+        width: 80%;
+        height: 80%;
+    }
+    
+    .marus-onsen .text-box h2 {
+        font-size: 1em;
+    }
+    
+    .marus-onsen .text-box p {
+        font-size: 0.8em;
+        line-height: 4;
+    }
+    
+/*メイン heya*/
+    .marus-oheya {
+        padding-top: 5%;
+    }
+    
+    .marus-oheya img {
+        width: 100%;
+        margin-top: 300px
+    }
+    
+    .marus-oheya .text-box {
+        width: 80%;
+        height: 45%;
+        margin-top: 100px;
+    }
+    
+    .marus-oheya .text-box h2 {
+        font-size: 1em;
+    }
+    
+    .marus-oheya .text-box p {
+        font-size: 0.8em;
+        line-height: 4;
+    }
+    
+    
+    
+/*メイン ryori*/
+    
+    .marus-oryori {
+        background-color: #fffef2;
+    }
+    
+    .marus-oryori img {
+        width: 100%;
+        margin-top: 250px
+    }
+    
+    .marus-oryori .text-box {
+        width: 80%;
+        height: 40%;
+        margin-top: 100px;
+    }
+    
+    .marus-oryori .text-box h2 {
+        font-size: 1em;
+    }
+    
+    .marus-oryori .text-box p {
+        font-size: 0.8em;
+        line-height: 4;
+    }
+    
+    
+/*メイン access*/
+    .access {
+        margin-top: 300px;
+    }
+    
+    .access-top .text-box h3 {
+        margin-top: 100px;
+        font-size: 1em;
+    }
+    
+    .access-top .text-box p {
+        font-size: 0.8em;
+    }
+    
+/*メイン footer*/
+    footer {
+        width: 100vw;
+    }
+    
+    footer .footer-wrap {
+        display: block;
+    }
+    
+    footer .footer-wrap nav {
+        width: 100%;
+        font-size: 0.8em;
+    }
+    
+    footer .footer-wrap nav ul li a {
+        border: 1px solid ;
+        padding: 1%;
+    }
+    
+    footer .footer-top {
+        display: block;
+        width: 100%;
+    }
+    
+    footer .footer-top .imgbox {
+        height: 0;
+    }
+    
+    footer .footer-top .imgbox img {
+        display: none;
+    }
+    
+    footer .footer-top .text-box {
+        width: 100%;
+    }
+    
+    footer .footer-top .text-box p {
+        width: 100%;
+        font-size: 0.8em;
+    }
+    
+    footer .footer-top .text-box h4 {
+        font-size: 1em;
+    }
+    
+    footer .snsicons .fa-instagram,.fa-facebook-square {
+        font-size: 2em;
+    }
+    
+    footer .snsicons p {
+        padding: 2%;
+    }
+    
+    
+    
+    
+    
+    
+}

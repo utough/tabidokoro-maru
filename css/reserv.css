@@ -1,0 +1,169 @@
+@charset "UTF-8";
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Noto Serif JP', serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    
+}
+
+span {
+    color: #e82013;
+}
+
+/*ヘッダー*/
+header {
+    display: flex;
+    width: 100vw;
+    height: 50px;
+    padding: 2%;
+}
+
+header h1:first-child {
+    font-size: 2.2em;
+}
+
+header h1 a {
+    color: #000;
+}
+
+header h1:last-child {
+    font-size: 2.2em;
+}
+
+header p {
+    margin-left: 2%;
+    margin-top: 3px;
+}
+
+header .imgbox {
+    height: 50px;
+}
+
+header img {
+    height: 100%;
+}
+
+/*メイン フォーム*/
+tr {
+    margin-top: 5%;
+    display: block;
+}
+
+th {
+    font-weight: normal;
+    text-align: left;
+    display: block;
+}
+
+td {
+    display: block;
+}
+
+.reservform {
+    width: 100vw;
+}
+
+table {
+    width: 70%;
+    margin: 0 auto;
+    padding: 2%;
+}
+
+.name th {
+    font-size: 1.5em;
+}
+
+.name input[type="text"] {
+    width: 50%;
+    padding: 2%;
+    font-size: 1.2em;
+}
+
+.gender th {
+    font-size: 1.5em;
+}
+
+.gender td {
+    font-size: 1.5em;
+}
+
+.gender input[type="radio"] {
+    width: 5%;
+    height: 20px;
+    margin: 3%;
+}
+
+
+.birth th {
+    font-size: 1.5em;
+}
+
+.birth td {
+    font-size: 1.5em;
+}
+
+.birth select {
+    font-size: 0.8em;
+    padding: 1%;
+    width: 25%;
+}
+
+.adress th {
+    font-size: 1.5em;
+}
+
+.adress input[type="text"] {
+    font-size: 1em;
+    padding:1%;
+}
+
+.wantsrooms th {
+    font-size: 1.5em;
+}
+
+.wantsrooms select {
+    font-size: 1em;
+    padding: 1%;
+}
+
+.bycar th {
+    font-size: 1.5em;
+}
+
+.bycar td {
+    font-size: 1.5em;
+}
+
+.bycar input[type="radio"] {
+    width: 5%;
+    height: 20px;
+    margin: 3%;
+}
+
+.otherwants th {
+    font-size: 1.5em;
+}
+
+.otherwants td textarea {
+    font-size: 1.1em;
+    padding: 1%;
+}
+
+button {
+    display: block;
+    width: 200px;
+    height: 50px;
+    font-size: 1.5em;
+    margin: 5% auto;
+}
+
+
+
+
