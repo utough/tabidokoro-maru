@@ -11,6 +11,8 @@ body {
     background-size: cover;
     background-attachment: fixed;
     top: 0;
+	overflow-y: scroll;
+	
 }
 
 a {
@@ -95,6 +97,7 @@ header nav ul li a:hover {
     height: 5px;
     background-color: #fff;
     border-radius: 4px;
+	display: none;
 }
 
 .menu-trigger span:nth-of-type(1) {
